@@ -1,16 +1,31 @@
 server:
   port: 8086
 
+spring:
+  application:
+    name: weatherservice
+  cloud:
+    config:
+      enabled: false
+
 eureka:
   client:
     service-url:
       defaultZone: http://eurekaserver:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
 
 springdoc:
   api-docs:
-    path: /v3/api-docs
+    path: /weather/v3/api-docs
   swagger-ui:
-    path: /swagger-ui.html
+    path: /weather/swagger-ui.html
 
 management:
   endpoints:

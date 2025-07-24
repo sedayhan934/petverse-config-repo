@@ -1,4 +1,9 @@
+server:
+  port: 8084
+
 spring:
+  application:
+    name: activityservice
   datasource:
     url: jdbc:postgresql://postgres:5432/petcaredb
     username: admin
@@ -61,5 +66,3 @@ resilience4j:
           - feign.FeignException$ServiceUnavailable
           - org.springframework.web.server.ResponseStatusException
 
-server:
-  port: 8084
