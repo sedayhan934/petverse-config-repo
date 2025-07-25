@@ -44,8 +44,6 @@ management:
     export:
       prometheus:
         enabled: true
-huggingface:
-  token: ${HUGGINGFACE_TOKEN}
 
 
 
