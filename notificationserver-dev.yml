@@ -2,8 +2,6 @@ server:
   port: 8085
 
 spring:
-  application:
-    name: notificationservice
   datasource:
     url: jdbc:postgresql://postgres:5432/petcaredb
     username: admin

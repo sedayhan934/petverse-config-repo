@@ -2,8 +2,6 @@ server:
   port: 8084
 
 spring:
-  application:
-    name: activityservice
   datasource:
     url: jdbc:postgresql://postgres:5432/petcaredb
     username: admin
