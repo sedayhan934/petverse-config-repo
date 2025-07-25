@@ -45,7 +45,8 @@ management:
       prometheus:
         enabled: true
 huggingface:
-  token: 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
+  token: ${HUGGINGFACE_TOKEN}
+
 
 
 resilience4j:
