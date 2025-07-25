@@ -6,7 +6,6 @@ spring:
     url: jdbc:postgresql://postgres:5432/petcaredb
     username: admin
     password: admin123
-    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -45,6 +44,9 @@ management:
     export:
       prometheus:
         enabled: true
+huggingface:
+  token: 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
+
 
 resilience4j:
   circuitbreaker:
