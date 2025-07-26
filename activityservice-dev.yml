@@ -45,6 +45,8 @@ management:
       prometheus:
         enabled: true
 
+huggingface:
+  token: ${HF_TOKEN}
 
 
 resilience4j:
